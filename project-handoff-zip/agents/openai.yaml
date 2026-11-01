@@ -1,0 +1,6 @@
+interface:
+  display_name: "通用会话与工作迁移 ZIP"
+  short_description: "打包任意场景的可见上下文、选定材料与成果，生成可校验、可恢复的会话交接包"
+  default_prompt: "请使用 $project-handoff-zip 将当前工作的上下文、可取得的聊天、选定材料、成果与后续步骤整理成迁移 ZIP，供新会话继续。"
+policy:
+  allow_implicit_invocation: true
