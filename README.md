@@ -7,6 +7,7 @@ Reusable skills for carrying work across conversations and projects.
 | Skill | Version | Description |
 | --- | --- | --- |
 | [project-handoff-zip](project-handoff-zip/SKILL.md) | 1.1.0 | Package available conversation context, selected materials and completed work into a verifiable, restorable handoff ZIP. |
+| [skill-google-sheet-pro](skill-google-sheet-pro/SKILL.md) | Not specified | Google Sheets operations including values, formatting, tab management, validation, charts and exports. |
 
 ## project-handoff-zip
 
@@ -25,9 +26,23 @@ The skill provides:
 
 The Python helper requires Python 3.9 or newer and uses only the standard library.
 
+## skill-google-sheet-pro
+
+Google Sheets tools with a Python helper and reference documentation for
+authentication, commands and worked examples. Keep Google credentials outside
+the repository and configure an authorized account before accessing spreadsheets.
+
+See [SKILL.md](skill-google-sheet-pro/SKILL.md) for the workflow and
+[commands.md](skill-google-sheet-pro/references/commands.md) for the command
+reference. The supplied package does not declare a version number.
+
+The original package is preserved verbatim. Its frontmatter description has
+1,115 characters; validation with a 1,024-character limit requires shortening
+that description before installation.
+
 ## Installation
 
-Place the complete `project-handoff-zip` directory in
+Place the complete directory of the skill you need in
 `$CODEX_HOME/skills/`, or `~/.codex/skills/` when `CODEX_HOME` is unset.
 If an installation already exists, inspect differences before replacing it.
 
@@ -49,7 +64,11 @@ Run from this repository:
 ```sh
 python3 project-handoff-zip/scripts/test_handoff.py
 python3 project-handoff-zip/scripts/handoff.py --help
+python3 -m py_compile skill-google-sheet-pro/scripts/gsheet_ops.py
 ```
+
+Compilation checks syntax only; it does not authenticate or test Google API
+operations.
 
 ## Boundaries
 
