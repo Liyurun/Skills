@@ -8,6 +8,7 @@ Reusable skills for carrying work across conversations and projects.
 | --- | --- | --- |
 | [project-handoff-zip](project-handoff-zip/SKILL.md) | 1.1.0 | Package available conversation context, selected materials and completed work into a verifiable, restorable handoff ZIP. |
 | [skill-google-sheet-pro](skill-google-sheet-pro/SKILL.md) | Not specified | Google Sheets operations including values, formatting, tab management, validation, charts and exports. |
+| [tech-writing-zh](tech-writing-zh/SKILL.md) | 2.1.0 | Detect and revise common AI phrasing in Chinese prose, with general, data/AI and fiction scopes. |
 
 ## project-handoff-zip
 
